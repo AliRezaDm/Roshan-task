@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>System Stats</title>
+</head>
+<body>
+    <div style="background-color: {{background}};">
+        <h2>Hello World!</h2>
+        <h2>Date and Time</h2>
+            <p>{{datetime}}</p>
+        <h2>System Stats</h2>
+        <div style="color:{{color}}"><p>RAM Status:</p>
+            <pre></pre>
+             <span id="ram">Total: {{ram_usage.total}}</span>
+             <pre></pre>
+             <span id="ram">Available: {{ram_usage.available}}</span>
+             <pre></pre>
+             <span id="ram">Used: {{ram_usage.used}}</span>
+             <pre></pre>
+             <span id="ram">Free: {{ram_usage.free}}</span>
+             <pre></pre>
+             <span id="ram">Usage percent: {{ram_usage.percent}}%</span>
+        </div>
+        <p style="color:{{color}}" >CPU Usage: <span id="cpu">{{cpu_usage}}%</span></p>
+    </div>
+</body>
+</html>
